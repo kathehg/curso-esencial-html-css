@@ -5,50 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El blog de Kathe</title>
+  <style>
+    body {
+      background: pink;
+      color: black;
+
+    }
+  </style>
 </head>
-<body>
+<body">
   <header>
-    <p>
-      Setup
-    </p>
+    <details>
+      <Summary>
+        Titulos
+         </Summary>
+         <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit dolorem tempore, perspiciatis in amet maxime corporis ipsam quae repellendus recusandae optio. Repudiandae eaque facilis officia assumenda veritatis numquam dolorem?
+         </p>
+    </details>
     <nav>
-      <ol>
-        <li>
-          Google Chrome
-        </li>
-        <li>
-          Figma
-        </li>
-        <li>
-          Github
-        </li>
-        <li>
-          Visual Studio Code
-        </li>
-      </ol>
-      <p>
-        Conceptos esenciales del Desarrollo Web
-      </p>
-      <ol>
-        <li>
-          Qué es HTML
-        </li>
-        <li>
-          Etiquetas
-        </li>
-        <li>
-          DOM
-        </li>
-        <li>
-          Semántica
-        </li>
-        <li>
-          Atributos
-        </li>
-        <li>
-          Qué es CSS
-        </li>
-      </ol>
+      <details open>
+        <summary>
+          Setup
+        </summary>
+        <ol>
+          <li>
+            <a href="#google-chrome"> Google Chrome </a>
+          </li>
+          <li>
+            <a href="#Figma"> Figma</a>
+          </li>
+          <li>
+            <a href="#Github"> Github</a>
+          </li>
+          <li>
+            <a href="#Visual-studio-code"> Visual Studio Code </a>
+          </li>
+        </ol>
+      </details>
+<details>
+  <summary>
+      Conceptos esenciales del Desarrollo Web
+  </summary>
+  <ol>
+    <li>
+      <a href="#Que-es-html"> Qué es HTML </a>
+    </li>
+    <li>
+      <a href="#Etiquetas">Etiquetas</a>
+    </li>
+    <li>
+      <a href="#DOM"> DOM </a>
+    </li>
+    <li>
+      <a href="#Semántica"> Semántica</a>
+    </li>
+    <li>
+      <a href="#Atributos">Atributos</a>
+    </li>
+    <li>
+      <a href="#Qué-es-CSS">Qué es CSS </a>
+    </li>
+  </ol>
+</details>
     </nav>
   </header>
   <h1>
@@ -62,24 +81,24 @@
   <h2>
     Setup
   </h2>
-<img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
-<h3>
+<img src="./images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+<h3 id="google-chrome">
   Google Chrome
 </h3>
 <p>
   Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de
   desarrollo avanzadas y de amigable uso.
 </p>
-<img src="images/figma.png" alt="Logo de Figma" title="Logo de Figma">
-<h3>
+<img src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma">
+<h3 id="Figma">
   Figma
 </h3>
 <p>
   Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
   implementación por su fácil uso porque puede ser usado directamente desde el navegador.
 </p>
-<img src="images/github.png" alt="Logo de Github" title="Logo de Github">
-<h3>
+<img src="./images/github.png" alt="Logo de Github" title="Logo de Github">
+<h3 id="Github">
   Github
 </h3>
 <p>
@@ -87,8 +106,8 @@
   mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
   manera privada, Github será esencial para almacenar tu futuro portafolio.
 </p>
-<img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
-<h3>
+<img src="./images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+<h3 id="Visual-studio-code">
   Visual Studio Code
 </h3>
 <p>
@@ -100,14 +119,32 @@
 <h2>
   Conceptos esenciales del Desarrollo Web
 </h2>
-<h3>
+<h3 id="Que-es-html">
   Qué es HTML
 </h3>
 <p>
   Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
   y la estructura del contenido.
+  <code>
+    const name = "your name"
+  </code>
+  <pre>
+const name = "your name"
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
 </p>
-<h3>
+<h3 id="Etiquetas">
   Etiquetas
 </h3>
 <p>
@@ -120,15 +157,15 @@ section o div, aquí es donde la semántica será la respuesta y si sabemos un p
 pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
 Software Developer.
 </p>
-<h3>
+<h3 id="DOM">
  DOM
 </h3>
 <p>
   El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
   genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
   dependencias, herencias en css y que tan complejo es nuestro proyecto.
-</p><img src="images/dom.png" alt="Estructura de árbol que representa al Document Object Model" height="100" weight="100">
-<h3>
+</p><img src="./images/dom.png" alt="Estructura de árbol que representa al Document Object Model" height="100" weight="100">
+<h3 id="Semántica">
   Semántica
 </h3>
 <p>
@@ -138,21 +175,21 @@ Software Developer.
   categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
   la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.
 </p>
-<h3>
+<h3 id="Atributos">
   Atributos
 </h3>
 <p>
   Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
   navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
   funcionan en solo alguna etiquetas como src
-  <h3>
+  <h3 id="Qué-es-CSS">
     CSS
   </h3>
   <P>
     Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
     la presentación de documentos HTML
   </P>
-  <img src="images/css.png" height= "100" weight="100">
+  <img src="./images/css.png" height= "100" weight="100">
   <h2>
     Modelo de caja
   </h2>
@@ -211,5 +248,10 @@ Software Developer.
     padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end
   </li>
 </ul>
+<a href="https://katherinehernandez.com"target=_blank>Página Web de Katherine </a>
+<p>
+  Si tienes alguna duda puedes escribirme a
+  <a href="malito:Katherinehernandez@utp.edu.co"> Katherinehernandez@utp.edu.co </a>
+</p>
 </body>
 </html>
